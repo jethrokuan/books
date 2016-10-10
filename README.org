@@ -1,0 +1,8 @@
+* Books
+
+This repository contains the source code for [[http://books.jethrokuan.com/][books.jethrokuan.com]]. The file pipeline is as follows:
+
+#+BEGIN_SRC 
+books.org -----------> books.html ----------> index.html
+          org-export               books.rb
+#+END_SRC
