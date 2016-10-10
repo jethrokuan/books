@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Jethro Kuan | Books</title> 
+    <link rel="stylesheet" href="/css/books.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <h1>Books</h1>
+    <p class="desc">Exported: <%=datestr%></p> 
+    <section class="to_read">
+      <h2>To Read</h2>
+      <ol>
+        <% toreadarr.each do |book| %>
+          <li class="to_read"><%=book.title%> <span class="tag"><%=book.tag%></span></li>
+        <%end %>
+      </ol>
+    </section>
+    <section class="next">
+      <h2>Next</h2>
+      <ol>
+        <% nextarr.each do |book| %>
+          <li class="next"><%=book.title%> <span class="tag"><%=book.tag%></span></li>
+        <%end %>        
+      </ol>
+    </section>
+    <section class="done">
+      <h2>Done</h2>
+      <ol>
+        <% donearr.each do |book| %>
+          <li class="done"><%=book.title%> <span class="tag"><%=book.tag%></span></li>
+        <%end %>
+      </ol>
+    </section>
+  </body>
+</html>
