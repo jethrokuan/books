@@ -1,0 +1,33 @@
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans:700|Noto+Serif';
+html {    
+    background-color: #ffe;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+h1, h2 {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+}
+
+ol {
+    -webkit-columns: auto 2; /* Chrome, Safari, Opera */
+    -moz-columns: auto 2; /* Firefox */
+    columns: auto 2; 
+}
+
+li {
+    font-family: "Noto Serif", "Georgia", serif;
+    padding: 4px 0;
+}
+
+.tag {
+    background-color: #eee ;
+    padding: 2px;
+    margin-left: 3px;
+    font-family: monospace;
+}
