@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-10-10 Mon 13:44 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 2016-12-13 Tue 15:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jethro Kuan | Books</title>
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Jethro Kuan" />
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Jethro Kuan" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -53,13 +53,97 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -92,6 +176,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <script type="text/javascript">
@@ -144,452 +229,446 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 <h1 class="title">Jethro Kuan | Books</h1>
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> <span class="todo TO_READ">TO-READ</span> A Brief History of Seven Killings&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> <span class="todo TO_READ">TO-READ</span> A Farewell to Arms&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">3</span> <span class="todo TO_READ">TO-READ</span> A Gentle Introduction to Symbolic Computation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
-</div>
-<div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4"><span class="section-number-2">4</span> <span class="todo TO_READ">TO-READ</span> A Little Life&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5"><span class="section-number-2">5</span> <span class="todo TO_READ">TO-READ</span> A Random Walk Down Wall Street&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
-<div id="outline-container-orgheadline6" class="outline-2">
-<h2 id="orgheadline6"><span class="section-number-2">6</span> <span class="todo TO_READ">TO-READ</span> Advanced Linux Programming&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
-</div>
-<div id="outline-container-orgheadline7" class="outline-2">
-<h2 id="orgheadline7"><span class="section-number-2">7</span> <span class="todo TO_READ">TO-READ</span> Algorithms to Live By&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
-<div id="outline-container-orgheadline8" class="outline-2">
-<h2 id="orgheadline8"><span class="section-number-2">8</span> <span class="todo TO_READ">TO-READ</span> All The Light I Cannot See&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline9" class="outline-2">
-<h2 id="orgheadline9"><span class="section-number-2">9</span> <span class="todo TO_READ">TO-READ</span> An Eternal Golden Braid&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
-<div id="outline-container-orgheadline10" class="outline-2">
-<h2 id="orgheadline10"><span class="section-number-2">10</span> <span class="todo TO_READ">TO-READ</span> Anna Karenina&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
-</div>
-<div id="outline-container-orgheadline11" class="outline-2">
-<h2 id="orgheadline11"><span class="section-number-2">11</span> <span class="todo TO_READ">TO-READ</span> Being Mortal&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
-<div id="outline-container-orgheadline12" class="outline-2">
-<h2 id="orgheadline12"><span class="section-number-2">12</span> <span class="todo TO_READ">TO-READ</span> Big Brand Theory&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
-<div id="outline-container-orgheadline13" class="outline-2">
-<h2 id="orgheadline13"><span class="section-number-2">13</span> <span class="todo TO_READ">TO-READ</span> Brothers Karamazov&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
-</div>
-<div id="outline-container-orgheadline14" class="outline-2">
-<h2 id="orgheadline14"><span class="section-number-2">14</span> <span class="todo TO_READ">TO-READ</span> Cats Cradle&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline15" class="outline-2">
-<h2 id="orgheadline15"><span class="section-number-2">15</span> <span class="todo TO_READ">TO-READ</span> Chekhov, Anton: Short Stories&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline16" class="outline-2">
-<h2 id="orgheadline16"><span class="section-number-2">16</span> <span class="todo TO_READ">TO-READ</span> Code Complete&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
-</div>
-<div id="outline-container-orgheadline17" class="outline-2">
-<h2 id="orgheadline17"><span class="section-number-2">17</span> <span class="todo TO_READ">TO-READ</span> Concepts, Techniques and Models of Computer Programming&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
-</div>
-<div id="outline-container-orgheadline18" class="outline-2">
-<h2 id="orgheadline18"><span class="section-number-2">18</span> <span class="todo TO_READ">TO-READ</span> Contact&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline19" class="outline-2">
-<h2 id="orgheadline19"><span class="section-number-2">19</span> <span class="todo TO_READ">TO-READ</span> Crazy Rich Asians&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline20" class="outline-2">
-<h2 id="orgheadline20"><span class="section-number-2">20</span> <span class="todo TO_READ">TO-READ</span> Crime and Punishment&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
-</div>
-<div id="outline-container-orgheadline21" class="outline-2">
-<h2 id="orgheadline21"><span class="section-number-2">21</span> <span class="todo TO_READ">TO-READ</span> Diaspora&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline22" class="outline-2">
-<h2 id="orgheadline22"><span class="section-number-2">22</span> <span class="todo TO_READ">TO-READ</span> Everything I Know&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
-<div id="outline-container-orgheadline23" class="outline-2">
-<h2 id="orgheadline23"><span class="section-number-2">23</span> <span class="todo TO_READ">TO-READ</span> Field Notes on Democracy: Listening to Grasshoppers&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
-<div id="outline-container-orgheadline24" class="outline-2">
-<h2 id="orgheadline24"><span class="section-number-2">24</span> <span class="todo TO_READ">TO-READ</span> Fight Club&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline25" class="outline-2">
-<h2 id="orgheadline25"><span class="section-number-2">25</span> <span class="todo TO_READ">TO-READ</span> Going Clear&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline26" class="outline-2">
-<h2 id="orgheadline26"><span class="section-number-2">26</span> <span class="todo TO_READ">TO-READ</span> Gravity's Rainbow&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
-</div>
-<div id="outline-container-orgheadline27" class="outline-2">
-<h2 id="orgheadline27"><span class="section-number-2">27</span> <span class="todo TO_READ">TO-READ</span> Hadrian's Wall&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
 
-<div id="outline-container-orgheadline28" class="outline-2">
-<h2 id="orgheadline28"><span class="section-number-2">28</span> <span class="todo TO_READ">TO-READ</span> High Performance Browser Networking&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+<div id="outline-container-org41dc8ee" class="outline-2">
+<h2 id="org41dc8ee"><span class="section-number-2">1</span> <span class="todo TO_READ">TO-READ</span> A Brief History of Seven Killings&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline29" class="outline-2">
-<h2 id="orgheadline29"><span class="section-number-2">29</span> <span class="todo TO_READ">TO-READ</span> Hooked: How to Build Habit-forming Products&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-orgc29ad07" class="outline-2">
+<h2 id="orgc29ad07"><span class="section-number-2">2</span> <span class="todo TO_READ">TO-READ</span> A Farewell to Arms&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline30" class="outline-2">
-<h2 id="orgheadline30"><span class="section-number-2">30</span> <span class="todo TO_READ">TO-READ</span> House of Leaves&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-org1d468d7" class="outline-2">
+<h2 id="org1d468d7"><span class="section-number-2">3</span> <span class="todo TO_READ">TO-READ</span> A Gentle Introduction to Symbolic Computation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
 </div>
-<div id="outline-container-orgheadline31" class="outline-2">
-<h2 id="orgheadline31"><span class="section-number-2">31</span> <span class="todo TO_READ">TO-READ</span> How Buildings Learn: What Happens After They're Built&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-orga5ba403" class="outline-2">
+<h2 id="orga5ba403"><span class="section-number-2">4</span> <span class="todo TO_READ">TO-READ</span> A Little Life&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-
-<div id="outline-container-orgheadline32" class="outline-2">
-<h2 id="orgheadline32"><span class="section-number-2">32</span> <span class="todo TO_READ">TO-READ</span> Hyperion&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-org4ff8c24" class="outline-2">
+<h2 id="org4ff8c24"><span class="section-number-2">5</span> <span class="todo TO_READ">TO-READ</span> A Random Walk Down Wall Street&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-<div id="outline-container-orgheadline33" class="outline-2">
-<h2 id="orgheadline33"><span class="section-number-2">33</span> <span class="todo TO_READ">TO-READ</span> Infinite Jest&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-org43b4ab8" class="outline-2">
+<h2 id="org43b4ab8"><span class="section-number-2">6</span> <span class="todo TO_READ">TO-READ</span> Advanced Linux Programming&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
 </div>
-<div id="outline-container-orgheadline34" class="outline-2">
-<h2 id="orgheadline34"><span class="section-number-2">34</span> <span class="todo TO_READ">TO-READ</span> Leviathan Wakes (The Expanse Collection)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-orgc7bb0ad" class="outline-2">
+<h2 id="orgc7bb0ad"><span class="section-number-2">7</span> <span class="todo TO_READ">TO-READ</span> Algorithms to Live By&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-<div id="outline-container-orgheadline35" class="outline-2">
-<h2 id="orgheadline35"><span class="section-number-2">35</span> <span class="todo TO_READ">TO-READ</span> Life-Changing Magic: A Journal: Spark Joy Every Day&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-orgcd9d943" class="outline-2">
+<h2 id="orgcd9d943"><span class="section-number-2">8</span> <span class="todo TO_READ">TO-READ</span> All The Light I Cannot See&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline36" class="outline-2">
-<h2 id="orgheadline36"><span class="section-number-2">36</span> <span class="todo TO_READ">TO-READ</span> Malevil&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-orgdc12d06" class="outline-2">
+<h2 id="orgdc12d06"><span class="section-number-2">9</span> <span class="todo TO_READ">TO-READ</span> An Eternal Golden Braid&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-<div id="outline-container-orgheadline37" class="outline-2">
-<h2 id="orgheadline37"><span class="section-number-2">37</span> <span class="todo TO_READ">TO-READ</span> Meditations&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-org0aaeb98" class="outline-2">
+<h2 id="org0aaeb98"><span class="section-number-2">10</span> <span class="todo TO_READ">TO-READ</span> Anna Karenina&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
 </div>
-<div id="outline-container-orgheadline38" class="outline-2">
-<h2 id="orgheadline38"><span class="section-number-2">38</span> <span class="todo TO_READ">TO-READ</span> Misbehaving&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-<div class="outline-text-2" id="text-38">
+<div id="outline-container-orgc0a7d18" class="outline-2">
+<h2 id="orgc0a7d18"><span class="section-number-2">11</span> <span class="todo TO_READ">TO-READ</span> Being Mortal&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
+<div id="outline-container-org8984741" class="outline-2">
+<h2 id="org8984741"><span class="section-number-2">12</span> <span class="todo TO_READ">TO-READ</span> Big Brand Theory&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-
-<div id="outline-container-orgheadline39" class="outline-2">
-<h2 id="orgheadline39"><span class="section-number-2">39</span> <span class="todo TO_READ">TO-READ</span> Moral Tribes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-orgbd6a95a" class="outline-2">
+<h2 id="orgbd6a95a"><span class="section-number-2">13</span> <span class="todo TO_READ">TO-READ</span> Brothers Karamazov&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
 </div>
-<div id="outline-container-orgheadline40" class="outline-2">
-<h2 id="orgheadline40"><span class="section-number-2">40</span> <span class="todo TO_READ">TO-READ</span> Neuro Web Design&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-org2e96b76" class="outline-2">
+<h2 id="org2e96b76"><span class="section-number-2">14</span> <span class="todo TO_READ">TO-READ</span> Cats Cradle&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline41" class="outline-2">
-<h2 id="orgheadline41"><span class="section-number-2">41</span> <span class="todo TO_READ">TO-READ</span> On Lisp&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+<div id="outline-container-orgd420399" class="outline-2">
+<h2 id="orgd420399"><span class="section-number-2">15</span> <span class="todo TO_READ">TO-READ</span> Chekhov, Anton: Short Stories&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline42" class="outline-2">
-<h2 id="orgheadline42"><span class="section-number-2">42</span> <span class="todo TO_READ">TO-READ</span> Originals: How Non-Conformists Move the World&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-orga826b6e" class="outline-2">
+<h2 id="orga826b6e"><span class="section-number-2">16</span> <span class="todo TO_READ">TO-READ</span> Code Complete&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
 </div>
-<div id="outline-container-orgheadline43" class="outline-2">
-<h2 id="orgheadline43"><span class="section-number-2">43</span> <span class="todo TO_READ">TO-READ</span> Our Mathematical Universe&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-orgde99324" class="outline-2">
+<h2 id="orgde99324"><span class="section-number-2">17</span> <span class="todo TO_READ">TO-READ</span> Concepts, Techniques and Models of Computer Programming&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
 </div>
-<div id="outline-container-orgheadline44" class="outline-2">
-<h2 id="orgheadline44"><span class="section-number-2">44</span> <span class="todo TO_READ">TO-READ</span> Poor Charlie's Almanack&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-orgc459199" class="outline-2">
+<h2 id="orgc459199"><span class="section-number-2">18</span> <span class="todo TO_READ">TO-READ</span> Contact&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline45" class="outline-2">
-<h2 id="orgheadline45"><span class="section-number-2">45</span> <span class="todo TO_READ">TO-READ</span> SICP&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+<div id="outline-container-orgaf6da69" class="outline-2">
+<h2 id="orgaf6da69"><span class="section-number-2">19</span> <span class="todo TO_READ">TO-READ</span> Cracking the Coding Interview&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-<div id="outline-container-orgheadline46" class="outline-2">
-<h2 id="orgheadline46"><span class="section-number-2">46</span> <span class="todo TO_READ">TO-READ</span> Satin Island&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-org47df1b7" class="outline-2">
+<h2 id="org47df1b7"><span class="section-number-2">20</span> <span class="todo TO_READ">TO-READ</span> Crazy Rich Asians&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline47" class="outline-2">
-<h2 id="orgheadline47"><span class="section-number-2">47</span> <span class="todo TO_READ">TO-READ</span> Seeing Is Forgetting the Name of the Thing One Sees&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-org0f80da7" class="outline-2">
+<h2 id="org0f80da7"><span class="section-number-2">21</span> <span class="todo TO_READ">TO-READ</span> Crime and Punishment&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
 </div>
-<div id="outline-container-orgheadline48" class="outline-2">
-<h2 id="orgheadline48"><span class="section-number-2">48</span> <span class="todo TO_READ">TO-READ</span> Seveneves&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-<div class="outline-text-2" id="text-48">
+<div id="outline-container-orgb794007" class="outline-2">
+<h2 id="orgb794007"><span class="section-number-2">22</span> <span class="todo TO_READ">TO-READ</span> Diaspora&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-orgd9c711a" class="outline-2">
+<h2 id="orgd9c711a"><span class="section-number-2">23</span> <span class="todo TO_READ">TO-READ</span> Engineering a Compiler&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+</div>
+<div id="outline-container-org6e83cce" class="outline-2">
+<h2 id="org6e83cce"><span class="section-number-2">24</span> <span class="todo TO_READ">TO-READ</span> Everything I Know&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-orge471742" class="outline-2">
+<h2 id="orge471742"><span class="section-number-2">25</span> <span class="todo TO_READ">TO-READ</span> Field Notes on Democracy: Listening to Grasshoppers&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-org6f3fce5" class="outline-2">
+<h2 id="org6f3fce5"><span class="section-number-2">26</span> <span class="todo TO_READ">TO-READ</span> Fight Club&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org6a54ca8" class="outline-2">
+<h2 id="org6a54ca8"><span class="section-number-2">27</span> <span class="todo TO_READ">TO-READ</span> Going Clear&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org405485f" class="outline-2">
+<h2 id="org405485f"><span class="section-number-2">28</span> <span class="todo TO_READ">TO-READ</span> Gravity's Rainbow&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
+</div>
+<div id="outline-container-org1e175d4" class="outline-2">
+<h2 id="org1e175d4"><span class="section-number-2">29</span> <span class="todo TO_READ">TO-READ</span> Grit&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-org7714fab" class="outline-2">
+<h2 id="org7714fab"><span class="section-number-2">30</span> <span class="todo TO_READ">TO-READ</span> Hadrian's Wall&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-orga22b302" class="outline-2">
+<h2 id="orga22b302"><span class="section-number-2">31</span> <span class="todo TO_READ">TO-READ</span> High Performance Browser Networking&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+</div>
+<div id="outline-container-orga191414" class="outline-2">
+<h2 id="orga191414"><span class="section-number-2">32</span> <span class="todo TO_READ">TO-READ</span> Hooked: How to Build Habit-forming Products&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-orga1775c6" class="outline-2">
+<h2 id="orga1775c6"><span class="section-number-2">33</span> <span class="todo TO_READ">TO-READ</span> House of Leaves&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org16f37af" class="outline-2">
+<h2 id="org16f37af"><span class="section-number-2">34</span> <span class="todo TO_READ">TO-READ</span> How Buildings Learn: What Happens After They're Built&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-org5cd930a" class="outline-2">
+<h2 id="org5cd930a"><span class="section-number-2">35</span> <span class="todo TO_READ">TO-READ</span> Hyperion&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org500ed31" class="outline-2">
+<h2 id="org500ed31"><span class="section-number-2">36</span> <span class="todo TO_READ">TO-READ</span> Infinite Jest&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-orgeaecdf8" class="outline-2">
+<h2 id="orgeaecdf8"><span class="section-number-2">37</span> <span class="todo TO_READ">TO-READ</span> Influence: The Psychology of Persuasion&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-org3ab3a56" class="outline-2">
+<h2 id="org3ab3a56"><span class="section-number-2">38</span> <span class="todo TO_READ">TO-READ</span> Leviathan Wakes (The Expanse Collection)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-orge6ba5dc" class="outline-2">
+<h2 id="orge6ba5dc"><span class="section-number-2">39</span> <span class="todo TO_READ">TO-READ</span> Life-Changing Magic: A Journal: Spark Joy Every Day&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-org30982d3" class="outline-2">
+<h2 id="org30982d3"><span class="section-number-2">40</span> <span class="todo TO_READ">TO-READ</span> Malevil&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-orgc7d4bdb" class="outline-2">
+<h2 id="orgc7d4bdb"><span class="section-number-2">41</span> <span class="todo TO_READ">TO-READ</span> Meditations&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-orgad9ed68" class="outline-2">
+<h2 id="orgad9ed68"><span class="section-number-2">42</span> <span class="todo TO_READ">TO-READ</span> Misbehaving&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div class="outline-text-2" id="text-42">
 </div>
 </div>
 
-<div id="outline-container-orgheadline49" class="outline-2">
-<h2 id="orgheadline49"><span class="section-number-2">49</span> <span class="todo TO_READ">TO-READ</span> Sex With Shakespeare&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-orgd00e7c8" class="outline-2">
+<h2 id="orgd00e7c8"><span class="section-number-2">43</span> <span class="todo TO_READ">TO-READ</span> Moral Tribes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-<div id="outline-container-orgheadline50" class="outline-2">
-<h2 id="orgheadline50"><span class="section-number-2">50</span> <span class="todo TO_READ">TO-READ</span> So Long, See You Tomorrow&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-orgfe3fbc6" class="outline-2">
+<h2 id="orgfe3fbc6"><span class="section-number-2">44</span> <span class="todo TO_READ">TO-READ</span> Neuro Web Design&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-<div id="outline-container-orgheadline51" class="outline-2">
-<h2 id="orgheadline51"><span class="section-number-2">51</span> <span class="todo TO_READ">TO-READ</span> Sophie's World&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-orgfe8a2a1" class="outline-2">
+<h2 id="orgfe8a2a1"><span class="section-number-2">45</span> <span class="todo TO_READ">TO-READ</span> On Lisp&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
 </div>
-<div id="outline-container-orgheadline52" class="outline-2">
-<h2 id="orgheadline52"><span class="section-number-2">52</span> <span class="todo TO_READ">TO-READ</span> Steal like an Artist&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-org6848758" class="outline-2">
+<h2 id="org6848758"><span class="section-number-2">46</span> <span class="todo TO_READ">TO-READ</span> Originals: How Non-Conformists Move the World&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-<div id="outline-container-orgheadline53" class="outline-2">
-<h2 id="orgheadline53"><span class="section-number-2">53</span> <span class="todo TO_READ">TO-READ</span> The Age of Reason&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
+<div id="outline-container-org58307dc" class="outline-2">
+<h2 id="org58307dc"><span class="section-number-2">47</span> <span class="todo TO_READ">TO-READ</span> Our Mathematical Universe&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-<div id="outline-container-orgheadline54" class="outline-2">
-<h2 id="orgheadline54"><span class="section-number-2">54</span> <span class="todo TO_READ">TO-READ</span> The Art of Racing in the Rain&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-<div class="outline-text-2" id="text-54">
+<div id="outline-container-org6438b99" class="outline-2">
+<h2 id="org6438b99"><span class="section-number-2">48</span> <span class="todo TO_READ">TO-READ</span> Peopleware: Productive Projects and Teams&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
+<div id="outline-container-org2481a58" class="outline-2">
+<h2 id="org2481a58"><span class="section-number-2">49</span> <span class="todo TO_READ">TO-READ</span> Poor Charlie's Almanack&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-
-<div id="outline-container-orgheadline55" class="outline-2">
-<h2 id="orgheadline55"><span class="section-number-2">55</span> <span class="todo TO_READ">TO-READ</span> The Beginning of Infinity&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-org54a9639" class="outline-2">
+<h2 id="org54a9639"><span class="section-number-2">50</span> <span class="todo TO_READ">TO-READ</span> Satin Island&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline56" class="outline-2">
-<h2 id="orgheadline56"><span class="section-number-2">56</span> <span class="todo TO_READ">TO-READ</span> The Book Thief&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-<div class="outline-text-2" id="text-56">
+<div id="outline-container-org0581438" class="outline-2">
+<h2 id="org0581438"><span class="section-number-2">51</span> <span class="todo TO_READ">TO-READ</span> Seeing Is Forgetting the Name of the Thing One Sees&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-</div>
-
-<div id="outline-container-orgheadline57" class="outline-2">
-<h2 id="orgheadline57"><span class="section-number-2">57</span> <span class="todo TO_READ">TO-READ</span> The Brothers Karamazov&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
-</div>
-<div id="outline-container-orgheadline58" class="outline-2">
-<h2 id="orgheadline58"><span class="section-number-2">58</span> <span class="todo TO_READ">TO-READ</span> The Brothers Sisters&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline59" class="outline-2">
-<h2 id="orgheadline59"><span class="section-number-2">59</span> <span class="todo TO_READ">TO-READ</span> The Cuckoo's Egg&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline60" class="outline-2">
-<h2 id="orgheadline60"><span class="section-number-2">60</span> <span class="todo TO_READ">TO-READ</span> The Cyberiad&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline61" class="outline-2">
-<h2 id="orgheadline61"><span class="section-number-2">61</span> <span class="todo TO_READ">TO-READ</span> The Divided Mind&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
-<div id="outline-container-orgheadline62" class="outline-2">
-<h2 id="orgheadline62"><span class="section-number-2">62</span> <span class="todo TO_READ">TO-READ</span> The Divine Comedy&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
-</div>
-<div id="outline-container-orgheadline63" class="outline-2">
-<h2 id="orgheadline63"><span class="section-number-2">63</span> <span class="todo TO_READ">TO-READ</span> The Egg&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline64" class="outline-2">
-<h2 id="orgheadline64"><span class="section-number-2">64</span> <span class="todo TO_READ">TO-READ</span> The Elements of Typographic Style&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
-<div id="outline-container-orgheadline65" class="outline-2">
-<h2 id="orgheadline65"><span class="section-number-2">65</span> <span class="todo TO_READ">TO-READ</span> The Forever War&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline66" class="outline-2">
-<h2 id="orgheadline66"><span class="section-number-2">66</span> <span class="todo TO_READ">TO-READ</span> The Gift of Fear&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
-<div id="outline-container-orgheadline67" class="outline-2">
-<h2 id="orgheadline67"><span class="section-number-2">67</span> <span class="todo TO_READ">TO-READ</span> The Girl in the Spider's Web&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline68" class="outline-2">
-<h2 id="orgheadline68"><span class="section-number-2">68</span> <span class="todo TO_READ">TO-READ</span> The Girl with All The Gifts&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline69" class="outline-2">
-<h2 id="orgheadline69"><span class="section-number-2">69</span> <span class="todo TO_READ">TO-READ</span> The Intelligent Conversationalist&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-<div class="outline-text-2" id="text-69">
+<div id="outline-container-orgecb506e" class="outline-2">
+<h2 id="orgecb506e"><span class="section-number-2">52</span> <span class="todo TO_READ">TO-READ</span> Seveneves&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div class="outline-text-2" id="text-52">
 </div>
 </div>
 
-<div id="outline-container-orgheadline70" class="outline-2">
-<h2 id="orgheadline70"><span class="section-number-2">70</span> <span class="todo TO_READ">TO-READ</span> The King's English: A Guide to Modern Usage&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-orgc6314db" class="outline-2">
+<h2 id="orgc6314db"><span class="section-number-2">53</span> <span class="todo TO_READ">TO-READ</span> Sex With Shakespeare&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline71" class="outline-2">
-<h2 id="orgheadline71"><span class="section-number-2">71</span> <span class="todo TO_READ">TO-READ</span> The Last Question&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-orge99abb3" class="outline-2">
+<h2 id="orge99abb3"><span class="section-number-2">54</span> <span class="todo TO_READ">TO-READ</span> So Long, See You Tomorrow&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline72" class="outline-2">
-<h2 id="orgheadline72"><span class="section-number-2">72</span> <span class="todo TO_READ">TO-READ</span> The Little/Seasoned Schemer&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+<div id="outline-container-orgf7898b4" class="outline-2">
+<h2 id="orgf7898b4"><span class="section-number-2">55</span> <span class="todo TO_READ">TO-READ</span> Sophie's World&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline73" class="outline-2">
-<h2 id="orgheadline73"><span class="section-number-2">73</span> <span class="todo TO_READ">TO-READ</span> The Magicians (Trilogy)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-orgedb5c77" class="outline-2">
+<h2 id="orgedb5c77"><span class="section-number-2">56</span> <span class="todo TO_READ">TO-READ</span> Steal like an Artist&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline74" class="outline-2">
-<h2 id="orgheadline74"><span class="section-number-2">74</span> <span class="todo TO_READ">TO-READ</span> The Monk&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-orgeecae29" class="outline-2">
+<h2 id="orgeecae29"><span class="section-number-2">57</span> <span class="todo TO_READ">TO-READ</span> The Age of Reason&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
 </div>
-<div id="outline-container-orgheadline75" class="outline-2">
-<h2 id="orgheadline75"><span class="section-number-2">75</span> <span class="todo TO_READ">TO-READ</span> The Odyssey&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
+<div id="outline-container-org2cdd7d3" class="outline-2">
+<h2 id="org2cdd7d3"><span class="section-number-2">58</span> <span class="todo TO_READ">TO-READ</span> The Art of Racing in the Rain&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div class="outline-text-2" id="text-58">
 </div>
-<div id="outline-container-orgheadline76" class="outline-2">
-<h2 id="orgheadline76"><span class="section-number-2">76</span> <span class="todo TO_READ">TO-READ</span> The Reasoned Schemer&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
 </div>
-<div id="outline-container-orgheadline77" class="outline-2">
-<h2 id="orgheadline77"><span class="section-number-2">77</span> <span class="todo TO_READ">TO-READ</span> The Robot in the Garden&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+
+<div id="outline-container-org401e6a8" class="outline-2">
+<h2 id="org401e6a8"><span class="section-number-2">59</span> <span class="todo TO_READ">TO-READ</span> The Beginning of Infinity&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-<div id="outline-container-orgheadline78" class="outline-2">
-<h2 id="orgheadline78"><span class="section-number-2">78</span> <span class="todo TO_READ">TO-READ</span> The Soul of a New Machine&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+<div id="outline-container-orgdbf9544" class="outline-2">
+<h2 id="orgdbf9544"><span class="section-number-2">60</span> <span class="todo TO_READ">TO-READ</span> The Book Thief&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div class="outline-text-2" id="text-60">
 </div>
-<div id="outline-container-orgheadline79" class="outline-2">
-<h2 id="orgheadline79"><span class="section-number-2">79</span> <span class="todo TO_READ">TO-READ</span> The Sun Also Rises&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline80" class="outline-2">
-<h2 id="orgheadline80"><span class="section-number-2">80</span> <span class="todo TO_READ">TO-READ</span> The Time Traveller's Wife&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+
+<div id="outline-container-org3874fca" class="outline-2">
+<h2 id="org3874fca"><span class="section-number-2">61</span> <span class="todo TO_READ">TO-READ</span> The Brothers Karamazov&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
+</div>
+<div id="outline-container-orgc5188ed" class="outline-2">
+<h2 id="orgc5188ed"><span class="section-number-2">62</span> <span class="todo TO_READ">TO-READ</span> The Brothers Sisters&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org0948279" class="outline-2">
+<h2 id="org0948279"><span class="section-number-2">63</span> <span class="todo TO_READ">TO-READ</span> The Cuckoo's Egg&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org291e1f4" class="outline-2">
+<h2 id="org291e1f4"><span class="section-number-2">64</span> <span class="todo TO_READ">TO-READ</span> The Cyberiad&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-orgb9e8100" class="outline-2">
+<h2 id="orgb9e8100"><span class="section-number-2">65</span> <span class="todo TO_READ">TO-READ</span> The Egg&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org9d66ac0" class="outline-2">
+<h2 id="org9d66ac0"><span class="section-number-2">66</span> <span class="todo TO_READ">TO-READ</span> The Girl with All The Gifts&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org6649b3e" class="outline-2">
+<h2 id="org6649b3e"><span class="section-number-2">67</span> <span class="todo TO_READ">TO-READ</span> The Idea Factory&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-orge40d469" class="outline-2">
+<h2 id="orge40d469"><span class="section-number-2">68</span> <span class="todo TO_READ">TO-READ</span> The Intelligent Conversationalist&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div class="outline-text-2" id="text-68">
+</div>
+</div>
+
+<div id="outline-container-orgfce73d7" class="outline-2">
+<h2 id="orgfce73d7"><span class="section-number-2">69</span> <span class="todo TO_READ">TO-READ</span> The King's English: A Guide to Modern Usage&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-org0d71258" class="outline-2">
+<h2 id="org0d71258"><span class="section-number-2">70</span> <span class="todo TO_READ">TO-READ</span> The Last Question&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org815adba" class="outline-2">
+<h2 id="org815adba"><span class="section-number-2">71</span> <span class="todo TO_READ">TO-READ</span> The Little/Seasoned Schemer&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+</div>
+<div id="outline-container-orgd586944" class="outline-2">
+<h2 id="orgd586944"><span class="section-number-2">72</span> <span class="todo TO_READ">TO-READ</span> The Magicians (Trilogy)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org47abe3f" class="outline-2">
+<h2 id="org47abe3f"><span class="section-number-2">73</span> <span class="todo TO_READ">TO-READ</span> The Monk&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org2e42a10" class="outline-2">
+<h2 id="org2e42a10"><span class="section-number-2">74</span> <span class="todo TO_READ">TO-READ</span> The Odyssey&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
+</div>
+<div id="outline-container-orgb81db2a" class="outline-2">
+<h2 id="orgb81db2a"><span class="section-number-2">75</span> <span class="todo TO_READ">TO-READ</span> The Reasoned Schemer&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+</div>
+<div id="outline-container-org725fca2" class="outline-2">
+<h2 id="org725fca2"><span class="section-number-2">76</span> <span class="todo TO_READ">TO-READ</span> The Robot in the Garden&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org70187c1" class="outline-2">
+<h2 id="org70187c1"><span class="section-number-2">77</span> <span class="todo TO_READ">TO-READ</span> The Soul of a New Machine&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+</div>
+<div id="outline-container-orge0020d6" class="outline-2">
+<h2 id="orge0020d6"><span class="section-number-2">78</span> <span class="todo TO_READ">TO-READ</span> The Unconsoled&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-orgb01586c" class="outline-2">
+<h2 id="orgb01586c"><span class="section-number-2">79</span> <span class="todo TO_READ">TO-READ</span> To Mock a Mockingbird&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-orgab1970c" class="outline-2">
+<h2 id="orgab1970c"><span class="section-number-2">80</span> <span class="todo TO_READ">TO-READ</span> Ubik&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 <div class="outline-text-2" id="text-80">
 </div>
 </div>
 
-<div id="outline-container-orgheadline81" class="outline-2">
-<h2 id="orgheadline81"><span class="section-number-2">81</span> <span class="todo TO_READ">TO-READ</span> The Unconsoled&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-org67e2f07" class="outline-2">
+<h2 id="org67e2f07"><span class="section-number-2">81</span> <span class="todo TO_READ">TO-READ</span> War and Peace&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
 </div>
-<div id="outline-container-orgheadline82" class="outline-2">
-<h2 id="orgheadline82"><span class="section-number-2">82</span> <span class="todo TO_READ">TO-READ</span> The World Until Yesterday&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-orga36c625" class="outline-2">
+<h2 id="orga36c625"><span class="section-number-2">82</span> <span class="todo TO_READ">TO-READ</span> We Are Our Brains&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-<div id="outline-container-orgheadline83" class="outline-2">
-<h2 id="orgheadline83"><span class="section-number-2">83</span> <span class="todo TO_READ">TO-READ</span> Then We Came To The End&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-<div class="outline-text-2" id="text-83">
+<div id="outline-container-org0700c5a" class="outline-2">
+<h2 id="org0700c5a"><span class="section-number-2">83</span> <span class="todo NEXT">NEXT</span> Chapterhouse Dune&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-orga027155" class="outline-2">
+<h2 id="orga027155"><span class="section-number-2">84</span> <span class="todo NEXT">NEXT</span> Grokking Algorithms&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+</div>
+<div id="outline-container-orgd04403c" class="outline-2">
+<h2 id="orgd04403c"><span class="section-number-2">85</span> <span class="todo NEXT">NEXT</span> When Breath Becomes Air&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div class="outline-text-2" id="text-85">
 </div>
 </div>
 
-<div id="outline-container-orgheadline84" class="outline-2">
-<h2 id="orgheadline84"><span class="section-number-2">84</span> <span class="todo TO_READ">TO-READ</span> To Mock a Mockingbird&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
-<div id="outline-container-orgheadline85" class="outline-2">
-<h2 id="orgheadline85"><span class="section-number-2">85</span> <span class="todo TO_READ">TO-READ</span> Trigger Warning&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline86" class="outline-2">
-<h2 id="orgheadline86"><span class="section-number-2">86</span> <span class="todo TO_READ">TO-READ</span> Ubik&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-org5c527e0" class="outline-2">
+<h2 id="org5c527e0"><span class="section-number-2">86</span> <span class="todo NEXT">NEXT</span> Work Clean&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 <div class="outline-text-2" id="text-86">
 </div>
 </div>
-<div id="outline-container-orgheadline87" class="outline-2">
-<h2 id="orgheadline87"><span class="section-number-2">87</span> <span class="todo TO_READ">TO-READ</span> War and Peace&#xa0;&#xa0;&#xa0;<span class="tag"><span class="classics">classics</span></span></h2>
+
+<div id="outline-container-orgf4ecaf0" class="outline-2">
+<h2 id="orgf4ecaf0"><span class="section-number-2">87</span> <span class="todo NEXT">NEXT</span> You Don't Know JS&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
 </div>
-<div id="outline-container-orgheadline88" class="outline-2">
-<h2 id="orgheadline88"><span class="section-number-2">88</span> <span class="todo TO_READ">TO-READ</span> We Are Our Brains&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-</div>
-<div id="outline-container-orgheadline89" class="outline-2">
-<h2 id="orgheadline89"><span class="section-number-2">89</span> <span class="todo NEXT">NEXT</span> Grokking Algorithms&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
-</div>
-<div id="outline-container-orgheadline90" class="outline-2">
-<h2 id="orgheadline90"><span class="section-number-2">90</span> <span class="todo NEXT">NEXT</span> Heretics of Dune&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline91" class="outline-2">
-<h2 id="orgheadline91"><span class="section-number-2">91</span> <span class="todo NEXT">NEXT</span> When Breath Becomes Air&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-<div class="outline-text-2" id="text-91">
-</div>
-</div>
-<div id="outline-container-orgheadline92" class="outline-2">
-<h2 id="orgheadline92"><span class="section-number-2">92</span> <span class="todo NEXT">NEXT</span> Work Clean&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-<div class="outline-text-2" id="text-92">
+<div id="outline-container-org0c10096" class="outline-2">
+<h2 id="org0c10096"><span class="section-number-2">88</span> <span class="done DONE">DONE</span> Children of Dune&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div class="outline-text-2" id="text-88">
 </div>
 </div>
 
-<div id="outline-container-orgheadline93" class="outline-2">
-<h2 id="orgheadline93"><span class="section-number-2">93</span> <span class="done DONE">DONE</span> Children of Dune&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-<div class="outline-text-2" id="text-93">
+<div id="outline-container-org82ecd7f" class="outline-2">
+<h2 id="org82ecd7f"><span class="section-number-2">89</span> <span class="done DONE">DONE</span> Dead Wake&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div class="outline-text-2" id="text-89">
 </div>
 </div>
 
-<div id="outline-container-orgheadline94" class="outline-2">
-<h2 id="orgheadline94"><span class="section-number-2">94</span> <span class="done DONE">DONE</span> Dead Wake&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-orge3aa8c7" class="outline-2">
+<h2 id="orge3aa8c7"><span class="section-number-2">90</span> <span class="done DONE">DONE</span> Duck, Death and the Tulip&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-orgaf6e929" class="outline-2">
+<h2 id="orgaf6e929"><span class="section-number-2">91</span> <span class="done DONE">DONE</span> Dune&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org0ad63db" class="outline-2">
+<h2 id="org0ad63db"><span class="section-number-2">92</span> <span class="done DONE">DONE</span> Dune Messiah&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-orgc778b69" class="outline-2">
+<h2 id="orgc778b69"><span class="section-number-2">93</span> <span class="done DONE">DONE</span> Exercises in Programming Style&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+</div>
+<div id="outline-container-org025f42e" class="outline-2">
+<h2 id="org025f42e"><span class="section-number-2">94</span> <span class="done DONE">DONE</span> Getting Things Done&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 <div class="outline-text-2" id="text-94">
 </div>
 </div>
 
-<div id="outline-container-orgheadline95" class="outline-2">
-<h2 id="orgheadline95"><span class="section-number-2">95</span> <span class="done DONE">DONE</span> Duck, Death and the Tulip&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-
-<div id="outline-container-orgheadline96" class="outline-2">
-<h2 id="orgheadline96"><span class="section-number-2">96</span> <span class="done DONE">DONE</span> Dune&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline97" class="outline-2">
-<h2 id="orgheadline97"><span class="section-number-2">97</span> <span class="done DONE">DONE</span> Dune Messiah&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline98" class="outline-2">
-<h2 id="orgheadline98"><span class="section-number-2">98</span> <span class="done DONE">DONE</span> Exercises in Programming Style&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
-</div>
-<div id="outline-container-orgheadline99" class="outline-2">
-<h2 id="orgheadline99"><span class="section-number-2">99</span> <span class="done DONE">DONE</span> Getting Things Done&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-<div class="outline-text-2" id="text-99">
-</div>
-</div>
-<div id="outline-container-orgheadline100" class="outline-2">
-<h2 id="orgheadline100"><span class="section-number-2">100</span> <span class="done DONE">DONE</span> Go in Action&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
-<div class="outline-text-2" id="text-100">
+<div id="outline-container-orgb37cfba" class="outline-2">
+<h2 id="orgb37cfba"><span class="section-number-2">95</span> <span class="done DONE">DONE</span> Go in Action&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+<div class="outline-text-2" id="text-95">
 </div>
 </div>
 
-<div id="outline-container-orgheadline101" class="outline-2">
-<h2 id="orgheadline101"><span class="section-number-2">101</span> <span class="done DONE">DONE</span> Hackers and Painters&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-<div class="outline-text-2" id="text-101">
+<div id="outline-container-org1bb98b0" class="outline-2">
+<h2 id="org1bb98b0"><span class="section-number-2">96</span> <span class="done DONE">DONE</span> Hackers and Painters&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div class="outline-text-2" id="text-96">
 </div>
 </div>
 
-<div id="outline-container-orgheadline102" class="outline-2">
-<h2 id="orgheadline102"><span class="section-number-2">102</span> <span class="done DONE">DONE</span> How To Win Friends and Influence People&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-orgcb8b0de" class="outline-2">
+<h2 id="orgcb8b0de"><span class="section-number-2">97</span> <span class="done DONE">DONE</span> Heretics of Dune&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-orgb34a9ea" class="outline-2">
+<h2 id="orgb34a9ea"><span class="section-number-2">98</span> <span class="done DONE">DONE</span> How To Win Friends and Influence People&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div class="outline-text-2" id="text-98">
+</div>
+</div>
+
+<div id="outline-container-org1c44bf1" class="outline-2">
+<h2 id="org1c44bf1"><span class="section-number-2">99</span> <span class="done DONE">DONE</span> How to Read a Book&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-org12a59b2" class="outline-2">
+<h2 id="org12a59b2"><span class="section-number-2">100</span> <span class="done DONE">DONE</span> Hyperbole and a Half&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-orgb5c842e" class="outline-2">
+<h2 id="orgb5c842e"><span class="section-number-2">101</span> <span class="done DONE">DONE</span> Inferno&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org2477e21" class="outline-2">
+<h2 id="org2477e21"><span class="section-number-2">102</span> <span class="done DONE">DONE</span> Ishmael&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 <div class="outline-text-2" id="text-102">
 </div>
 </div>
 
-<div id="outline-container-orgheadline103" class="outline-2">
-<h2 id="orgheadline103"><span class="section-number-2">103</span> <span class="done DONE">DONE</span> How to Read a Book&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-org2fce731" class="outline-2">
+<h2 id="org2fce731"><span class="section-number-2">103</span> <span class="done DONE">DONE</span> Jump Start Sass&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
 </div>
-<div id="outline-container-orgheadline104" class="outline-2">
-<h2 id="orgheadline104"><span class="section-number-2">104</span> <span class="done DONE">DONE</span> Hyperbole and a Half&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-org43bad11" class="outline-2">
+<h2 id="org43bad11"><span class="section-number-2">104</span> <span class="done DONE">DONE</span> Love is an Empty Barstool&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline105" class="outline-2">
-<h2 id="orgheadline105"><span class="section-number-2">105</span> <span class="done DONE">DONE</span> Inferno&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline106" class="outline-2">
-<h2 id="orgheadline106"><span class="section-number-2">106</span> <span class="done DONE">DONE</span> Ishmael&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-<div class="outline-text-2" id="text-106">
+<div id="outline-container-org7e94ccc" class="outline-2">
+<h2 id="org7e94ccc"><span class="section-number-2">105</span> <span class="done DONE">DONE</span> Mastering Emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+<div class="outline-text-2" id="text-105">
 </div>
 </div>
 
-<div id="outline-container-orgheadline107" class="outline-2">
-<h2 id="orgheadline107"><span class="section-number-2">107</span> <span class="done DONE">DONE</span> Jump Start Sass&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+<div id="outline-container-org9722458" class="outline-2">
+<h2 id="org9722458"><span class="section-number-2">106</span> <span class="done DONE">DONE</span> Mythical Man Month&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
 </div>
-<div id="outline-container-orgheadline108" class="outline-2">
-<h2 id="orgheadline108"><span class="section-number-2">108</span> <span class="done DONE">DONE</span> Love is an Empty Barstool&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline109" class="outline-2">
-<h2 id="orgheadline109"><span class="section-number-2">109</span> <span class="done DONE">DONE</span> Mastering Emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
-<div class="outline-text-2" id="text-109">
+<div id="outline-container-org16a5130" class="outline-2">
+<h2 id="org16a5130"><span class="section-number-2">107</span> <span class="done DONE">DONE</span> Never Let Me Go&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div class="outline-text-2" id="text-107">
 </div>
 </div>
 
-<div id="outline-container-orgheadline110" class="outline-2">
-<h2 id="orgheadline110"><span class="section-number-2">110</span> <span class="done DONE">DONE</span> Mythical Man Month&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
-</div>
-<div id="outline-container-orgheadline111" class="outline-2">
-<h2 id="orgheadline111"><span class="section-number-2">111</span> <span class="done DONE">DONE</span> Never Let Me Go&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-<div class="outline-text-2" id="text-111">
+<div id="outline-container-org45ea76d" class="outline-2">
+<h2 id="org45ea76d"><span class="section-number-2">108</span> <span class="done DONE">DONE</span> On Writing Well&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div class="outline-text-2" id="text-108">
 </div>
 </div>
 
-<div id="outline-container-orgheadline112" class="outline-2">
-<h2 id="orgheadline112"><span class="section-number-2">112</span> <span class="done DONE">DONE</span> On Writing Well&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-<div class="outline-text-2" id="text-112">
+<div id="outline-container-orgee73956" class="outline-2">
+<h2 id="orgee73956"><span class="section-number-2">109</span> <span class="done DONE">DONE</span> Overcoming Gravity&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+</div>
+<div id="outline-container-org1d1ed4f" class="outline-2">
+<h2 id="org1d1ed4f"><span class="section-number-2">110</span> <span class="done DONE">DONE</span> Practical Common Lisp&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+</div>
+<div id="outline-container-orgbfa863b" class="outline-2">
+<h2 id="orgbfa863b"><span class="section-number-2">111</span> <span class="done DONE">DONE</span> SICP&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+</div>
+<div id="outline-container-orgfe76abb" class="outline-2">
+<h2 id="orgfe76abb"><span class="section-number-2">112</span> <span class="done DONE">DONE</span> Secrets of the Javascript Ninja&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h2>
+</div>
+<div id="outline-container-org897b640" class="outline-2">
+<h2 id="org897b640"><span class="section-number-2">113</span> <span class="done DONE">DONE</span> Sin and Syntax&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div class="outline-text-2" id="text-113">
 </div>
 </div>
 
-<div id="outline-container-orgheadline113" class="outline-2">
-<h2 id="orgheadline113"><span class="section-number-2">113</span> <span class="done DONE">DONE</span> Overcoming Gravity&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-orgfdb9260" class="outline-2">
+<h2 id="orgfdb9260"><span class="section-number-2">114</span> <span class="done DONE">DONE</span> Slaughterhouse Five&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline114" class="outline-2">
-<h2 id="orgheadline114"><span class="section-number-2">114</span> <span class="done DONE">DONE</span> Sin and Syntax&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
-<div class="outline-text-2" id="text-114">
+<div id="outline-container-org18a8809" class="outline-2">
+<h2 id="org18a8809"><span class="section-number-2">115</span> <span class="done DONE">DONE</span> The Hitchiker's Guide to the Galaxy&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+</div>
+<div id="outline-container-org52a204f" class="outline-2">
+<h2 id="org52a204f"><span class="section-number-2">116</span> <span class="done DONE">DONE</span> The Lovely Bones&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div class="outline-text-2" id="text-116">
 </div>
 </div>
-<div id="outline-container-orgheadline115" class="outline-2">
-<h2 id="orgheadline115"><span class="section-number-2">115</span> <span class="done DONE">DONE</span> Slaughterhouse Five&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline116" class="outline-2">
-<h2 id="orgheadline116"><span class="section-number-2">116</span> <span class="done DONE">DONE</span> The Hitchiker's Guide to the Galaxy&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-</div>
-<div id="outline-container-orgheadline117" class="outline-2">
-<h2 id="orgheadline117"><span class="section-number-2">117</span> <span class="done DONE">DONE</span> The Lovely Bones&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+
+<div id="outline-container-org84b44bd" class="outline-2">
+<h2 id="org84b44bd"><span class="section-number-2">117</span> <span class="done DONE">DONE</span> The Omnivore's Dilemma&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 <div class="outline-text-2" id="text-117">
 </div>
 </div>
 
-<div id="outline-container-orgheadline118" class="outline-2">
-<h2 id="orgheadline118"><span class="section-number-2">118</span> <span class="done DONE">DONE</span> The Omnivore's Dilemma&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-org7554a63" class="outline-2">
+<h2 id="org7554a63"><span class="section-number-2">118</span> <span class="done DONE">DONE</span> The Princess Bride&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 <div class="outline-text-2" id="text-118">
 </div>
 </div>
-<div id="outline-container-orgheadline119" class="outline-2">
-<h2 id="orgheadline119"><span class="section-number-2">119</span> <span class="done DONE">DONE</span> The Princess Bride&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
-<div class="outline-text-2" id="text-119">
-</div>
-</div>
 
-<div id="outline-container-orgheadline120" class="outline-2">
-<h2 id="orgheadline120"><span class="section-number-2">120</span> <span class="done DONE">DONE</span> The Remains of the Day&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-org0ba4c72" class="outline-2">
+<h2 id="org0ba4c72"><span class="section-number-2">119</span> <span class="done DONE">DONE</span> The Remains of the Day&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline121" class="outline-2">
-<h2 id="orgheadline121"><span class="section-number-2">121</span> <span class="done DONE">DONE</span> The Smashing Book #4&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-org47c46ac" class="outline-2">
+<h2 id="org47c46ac"><span class="section-number-2">120</span> <span class="done DONE">DONE</span> The Smashing Book #4&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-<div id="outline-container-orgheadline122" class="outline-2">
-<h2 id="orgheadline122"><span class="section-number-2">122</span> <span class="done DONE">DONE</span> Thing Explainer: Complicated Stuff in Simple Words&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-org721fd4c" class="outline-2">
+<h2 id="org721fd4c"><span class="section-number-2">121</span> <span class="done DONE">DONE</span> Thing Explainer: Complicated Stuff in Simple Words&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
-<div id="outline-container-orgheadline123" class="outline-2">
-<h2 id="orgheadline123"><span class="section-number-2">123</span> <span class="done DONE">DONE</span> Undermajordomo Minor&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
+<div id="outline-container-orgf9382b1" class="outline-2">
+<h2 id="orgf9382b1"><span class="section-number-2">122</span> <span class="done DONE">DONE</span> Undermajordomo Minor&#xa0;&#xa0;&#xa0;<span class="tag"><span class="leisure">leisure</span></span></h2>
 </div>
-<div id="outline-container-orgheadline124" class="outline-2">
-<h2 id="orgheadline124"><span class="section-number-2">124</span> <span class="done DONE">DONE</span> Zero to One&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
+<div id="outline-container-org2456497" class="outline-2">
+<h2 id="org2456497"><span class="section-number-2">123</span> <span class="done DONE">DONE</span> Zero to One&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enrichment">enrichment</span></span></h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Jethro Kuan</p>
-<p class="date">Created: 2016-10-10 Mon 13:44</p>
+<p class="date">Created: 2016-12-13 Tue 15:34</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
